@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #a09e16; 
+}
+
+form, table, h1, h2, p {
+    
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #97a016; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #a09916;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    background-color: #9ea016; 
+    color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+}

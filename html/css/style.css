@@ -1,0 +1,91 @@
+.header {
+	padding: 10px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
+  }
+
+
+
+  .header1 {
+	text-align: center;
+	color: #1abc9c;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+
+
+.fila {
+	display: flex;
+	justify-content: space-around;
+	
+}
+.columna {
+	flex: 1 1 30%;
+	margin: 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.columna img {
+	width: 100%;
+	height: 350px;
+}
+
+.columna a {
+	color: #1abc9c;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #1abc9c; 
+}
+
+.filtro {
+    margin-bottom: 20px;
+}
+
+.filtro label {
+    margin-right: 10px;
+}
+
+.filtro input, .filtro select {
+    margin-right: 20px;
+}
+
+.resultados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resultados th, .resultados td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.resultados th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #1abc9c; 
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}

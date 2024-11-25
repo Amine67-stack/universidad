@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/alumnos.css">
+    <title>Gestión de Alumnos</title>
+</head>
+<body>
+    <h1>Gestión de Alumnos 👩🏼‍🎓</h1> <i class="fa-solid fa-graduation-cap"></i>
+    
+    <form id="buscarForm">
+        <label for="buscarIdNif">ID o NIF:</label>
+        <input type="text" id="buscarIdNif" name="buscarIdNif">
+        <br>
+        <br>
+        <label for="buscarName">Nombre:</label>
+        <input type="text" id="buscarName" name="buscarName">
+        <br>
+        <br>
+        <button type="submit">Buscar</button>
+    </form>
+    <h2>Resultados de la Búsqueda</h2>
+    <table id="tablaAlumnos" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NIF</th>
+                <th>Nombre</th>
+                <th>Apellido1</th>
+                <th>Apellido2</th>
+                <th>Ciudad</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Resultados de búsqueda se insertarán aquí -->
+        </tbody>
+    </table>
+    <h2>Asignaturas del Alumno</h2>
+    <table id="TablaAsignaturas" border="1" style="display:none;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Créditos</th>
+                <th>Curso</th>
+                <th>Cuatrimestre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Asignaturas se insertarán aquí -->
+        </tbody>
+    </table>
+    <p id="noSubjectsMessage" style="display:none;">El alumno no tiene asignaturas.</p>
+    
+    <a href="index.html">Volver a la página índice</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Profesores</title>
+    <link rel="stylesheet" href="css/profesores.css">
+</head>
+
+
+
+<body>
+    <h1>Gestión de Profesores 👩🏻‍🏫</h1>
+    <div class="filtro">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <label for="apellido1">Apellido 1:</label>
+        <input type="text" id="apellido1" name="apellido1">
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+            <option value="">Todos</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+        
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" name="departamento">
+            <!-- Opciones cargadas desde la base de datos -->
+        </select>
+        
+        <button id="buscar">Buscar</button>
+    </div>
+    
+    <div class="resultados">
+        <table>
+            <thead>
+                <tr>
+                    <th>NIF</th>
+                    <th>Nombre</th>
+                    <th>Apellido 1</th>
+                    <th>Apellido 2</th>
+                    <th>Ciudad</th>
+                    <th>Sexo</th>
+                    <th>Departamento</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-resultados">
+                <!-- Resultados de la búsqueda -->
+            </tbody>
+        </table>
+        <p id="mensaje-sin-resultados" style="display: none;">No hay resultados para la búsqueda.</p>
+    </div>
+    
+    <a href="index.html">Volver a la página índice</a>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

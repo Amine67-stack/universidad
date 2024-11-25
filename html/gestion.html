@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Matriculaciones</title>
+    <link rel="stylesheet" href="css/gestion.css">
+</head>
+<body>
+    <h1>Gestión de Matriculaciones</h1>
+
+    <form id="matriculationForm" method="POST">
+        <!-- Selección del Alumno -->
+        <label for="student">Alumno:</label>
+        <select id="student" name="student" required>
+            <option value="">Seleccione un Alumno</option>
+            <option value="1">Juan Pérez</option>
+            <option value="2">Ana Gómez</option>
+            <option value="3">Pedro Martínez</option>
+        </select><br><br>
+
+        <!-- Selección del Grado -->
+        <label for="degree">Grado:</label>
+        <select id="degree" name="degree" required>
+            <option value="">Seleccione un Grado</option>
+            <option value="grado1">Grado 1</option>
+            <option value="grado2">Grado 2</option>
+            <option value="grado3">Grado 3</option>
+        </select><br><br>
+
+        <!-- Selección del Año -->
+        <label for="year">Año:</label>
+        <select id="year" name="year" required>
+            <option value="">Seleccione un Año</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+        </select><br><br>
+
+        <!-- Aquí se cargarán las asignaturas en función del grado y año -->
+        <div id="subjectsContainer" style="display:none;">
+            <h3>Asignaturas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seleccionar</th>
+                        <th>Asignatura</th>
+                    </tr>
+                </thead>
+                <tbody id="subjectsTable">
+                    <!-- Las asignaturas se agregarán dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <button type="submit">Matricular</button>
+    </form>
+
+    <div id="message" style="display:none; margin-top:20px;">
+        <p>¡La matriculación ha sido realizada correctamente! Se han matriculado <span id="numSubjects"></span> asignaturas.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
